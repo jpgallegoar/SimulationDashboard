@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulation Dashboard</h1>
+    <div>
+        <h2>Create Simulation</h2>
+        <form id="createSimulationForm">
+            Name: <input type="text" id="simName" required>
+            Machine: 
+            <select id="machineSelect" required>
+            </select>            
+            <button type="submit">Create Simulation</button>
+        </form>
+    </div>
+    <div>
+        <h2>Create Machine</h2>
+        <form id="createMachineForm">
+            Name: <input type="text" id="machineName" required>
+            <button type="submit">Create Machine</button>
+        </form>
+    </div>
+    <div>
+        <h2>Simulations</h2>
+        Filter by Status: 
+        <select id="filterStatus">
+            <option value="">All</option>
+            <option value="pending">Pending</option>
+            <option value="running">Running</option>
+            <option value="finished">Finished</option>
+        </select>
+        Order by: 
+        <select id="orderBy">
+            <option value="creation_date">Creation Date</option>
+            <option value="update_date">Update Date</option>
+            <option value="name">Name</option>
+        </select>
+        Direction: 
+        <select id="orderDirection">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+        </select>  
+        <ul id="simulationsList"></ul>
+    </div>
+    <div id="simulationDetails">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h1, h2 {
+    color: navy;
+}
+form, div {
+    margin-bottom: 20px;
+}
+#convergenceGraph {
+    height: 400px;
+}

@@ -1,0 +1,9 @@
+flask
+psycopg2-binary
+flask-socketio
+psycopg2-binary
+Flask-SocketIO
+python-engineio
+python-socketio
+pytest
+requests
